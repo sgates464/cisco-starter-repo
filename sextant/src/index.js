@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { Grommet } from "grommet";
+import { Box, Grommet } from "grommet";
 
 const theme = {
   name: "Cisco Project Theme",
@@ -99,7 +99,7 @@ const theme = {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Grommet theme={theme}>
+    <Grommet theme={theme} background="active-background" full={true}>
       <App />
     </Grommet>
   </React.StrictMode>

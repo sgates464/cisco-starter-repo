@@ -1,8 +1,9 @@
 //Task: Create a component displaying a heading and any children components as a Card with Card, CardHeader, CardBody, CardFooter.
-import { Card, CardHeader, CardBody, CardFooter, Heading } from "grommet";
-function Exhibit({ Children, heading }) {
+import React from "react";
+import { Card, CardHeader, CardBody, CardFooter, Heading, Box } from "grommet";
+function Exhibit({ children, heading }) {
   return (
-    <Card background={{ color: "background" }} width="medium" height="medium">
+    <Card background={{ color: "background" }} width="medium" height="small">
       <CardHeader
         align="center"
         direction="column"
@@ -14,7 +15,7 @@ function Exhibit({ Children, heading }) {
       </CardHeader>
       <CardBody pad="small">
         <Box align="center" justify="center" fill>
-          {Children}
+          {children}
         </Box>
       </CardBody>
       <CardFooter

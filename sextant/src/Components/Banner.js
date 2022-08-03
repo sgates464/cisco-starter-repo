@@ -1,4 +1,5 @@
 // Task: Create a banner component displaying the title of the app.
+import React from "react";
 import { Box, Header, Heading } from "grommet";
 import { Network } from "grommet-icons";
 function Banner() {
