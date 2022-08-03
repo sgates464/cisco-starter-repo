@@ -7,7 +7,6 @@ function Exhibit({ children, heading }) {
       <CardHeader
         align="center"
         direction="column"
-        flex={true}
         justify="start"
         gap="medium"
       >
