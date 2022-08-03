@@ -6,26 +6,25 @@ function Banner() {
   return (
     <Box
       align="stretch"
-      justify="start"
+      justify="center"
       fill="horizontal"
       background={{ color: "background" }}
       pad={{ horizontal: "small" }}
       elevation="small"
+      flex="shrink"
+      direction="row"
     >
       <Header
         align="center"
         direction="row-responsive"
-        flex={false}
-        justify="between"
+        flex={true}
+        justify="center"
         gap="large"
       >
         <Box align="stretch" justify="center">
-          <Heading color="brand" level="2">
+          <Heading color="brand" level="2" textAlign="center">
             Sextant App
           </Heading>
-        </Box>
-        <Box align="stretch" justify="center">
-          <Network color="dark-1" size="large" />
         </Box>
       </Header>
     </Box>

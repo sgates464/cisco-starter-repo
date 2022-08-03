@@ -3,18 +3,18 @@ import React from "react";
 import { Card, CardHeader, CardBody, CardFooter, Heading, Box } from "grommet";
 function Exhibit({ children, heading }) {
   return (
-    <Card background={{ color: "background" }} width="medium" height="small">
+    <Card background={{ color: "background" }} width="medium">
       <CardHeader
         align="center"
         direction="column"
-        flex={false}
+        flex={true}
         justify="start"
         gap="medium"
       >
         <Heading level="3">{heading}</Heading>
       </CardHeader>
       <CardBody pad="small">
-        <Box align="center" justify="center" fill>
+        <Box align="center" justify="center" fill flex={true}>
           {children}
         </Box>
       </CardBody>
